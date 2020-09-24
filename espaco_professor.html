@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Espaço professor</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style/espaco_professor.css">
 </head>
+
 <body>
 	<nav class="menu">
 		<p><span class="titulo-menu">Espaço Professor</span></p>
 		<ul>
-			<li><span>Gerenciar Notas</span></li>
-			<li><span>Dashboard</span></li>
+			<li><span onclick="handleMenu(this);">Gerenciar Notas</span></li>
+			<li><span onclick="handleMenu(this);">Dashboard</span></li>
 		</ul>
 	</nav>
 	<div class="container">
-		<section class="gerenciar-nota">
+		<section class="gerenciar-nota esconder">
 			<form id="my-form">
 				<div class="input disciplina-section">
 					<label for="disciplina">Disciplina</label>
@@ -26,7 +28,7 @@
 				</div>
 				<div class="input prova-section">
 					<label for="prova">Prova</label>
-					<select id="prova" name="prova">
+					<select id="prova" name="prova" required>
 						<option value="av1">AV1</option>
 						<option value="av2">AV2</option>
 						<option value="av3">AV3</option>
@@ -36,12 +38,17 @@
 					<label for="nota">Nota</label>
 					<input type="number" id="nota" name="nota" required="true" step="0.1">
 				</div>
-				<button type="submit" form="my-form" class="form-btn">Cadastrar</button>
+				<button type="submit" form="my-form" class="form-btn">Salvar</button>
 			</form>
 			<div class="put-line">
 			</div>
 		</section>
+
+		<section class="gerenciar-dashboard">
+
+		</section>
 	</div>
 	<script type="text/javascript" src="script/script.js"> </script>
 </body>
+
 </html>

@@ -1,3 +1,5 @@
+/*GERAL*/
+
 *{
 	margin: 0;
 	padding: 0;
@@ -52,6 +54,10 @@ ul {
 	padding: 50px 20px;
 	border: 2px solid #21612D;
 	border-radius: 5px 5px 30px 30px;
+}
+
+.esconder {
+	display:none!important;
 }
 
 /*CRUD SECTION*/
@@ -141,3 +147,4 @@ a {
 	color: red;
 	cursor: pointer;
 }
+
