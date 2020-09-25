@@ -128,11 +128,11 @@ function handleMenu(context) {
     const dashboard = document.querySelector('.gerenciar-dashboard');
     if (valor == 'Gerenciar Notas') {
         gerenciarNota.classList.remove('esconder');
-        dashboard.classList.add('.esconder');
+        dashboard.classList.add('esconder');
     }
     else if (valor == 'Dashboard') {
         gerenciarNota.classList.add('esconder');
-        dashboard.classList.remove('.esconder');
+        dashboard.classList.remove('esconder');
     }
 }
 
@@ -176,3 +176,49 @@ function clearForm(id) {
     dataForm('#prova').disabled = false;
     dataForm('#disciplina').disabled = false;
 }
+
+const montaHistorgramaChart = () => {
+    let ctx = document.getElementById("histogramaChart").getContext('2d');
+    let dataValues = [12, 19, 3, 5];
+    let dataLabels = [0, 1, 2, 3, 4];
+    let myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: dataLabels,
+            datasets: [{
+                label: 'Sala A',
+                data: dataValues,
+                backgroundColor: '#21612D'
+            },
+            {
+                label: 'Sala B',
+                data: dataValues,
+                backgroundColor: '#4CE067'
+            }]
+        },
+        options: {
+            scales: {
+                xAxes: [{
+                    display: false,
+                    barPercentage: 1.3,
+                    ticks: {
+                        max: 3,
+                    }
+                }, {
+                    display: true,
+                    ticks: {
+                        autoSkip: false,
+                        max: 4,
+                    }
+                }],
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+}
+
+montaHistorgramaChart()

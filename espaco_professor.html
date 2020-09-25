@@ -45,9 +45,44 @@
 		</section>
 
 		<section class="gerenciar-dashboard">
-
+			<div class="header-dashboard">
+				<img class="dashboard-icon" src="images/analysis.png">
+				<h1>Dashboard para Análise das Notas</h1>
+			</div>
+			<div class="body-dashboard">
+				<div class="section-body-dashboard media-notas-section">
+					<img class="dashboard-section-icon" src="images/analytics.png">
+					<p class="enunciado">Valor Médio das Notas:</p>
+					<p class="valor">7.8</p>
+				</div>
+				<div class="section-body-dashboard desvio-notas-section">
+					<img class="dashboard-section-icon" src="images/bar-chart.png">
+					<p class="enunciado">Desvio Padrão das Notas:</p>
+					<p class="valor">0.7689</p>
+				</div>
+				<div class="section-body-dashboard qurtil-notas-section">
+					<img class="dashboard-section-icon" src="images/quartil.png">
+					<p class="enunciado">Quartis das Notas:</p>
+					<p class="valor">0.4401</p>
+				</div>
+				<div class="section-body-dashboard maior-notas-section">
+					<img class="dashboard-section-icon" src="images/like.png">
+					<p class="enunciado">Maior Nota:</p>
+					<p class="valor">9.8</p>
+				</div>
+				<div class="section-body-dashboard menor-notas-section">
+					<img class="dashboard-section-icon" src="images/dislike.png">
+					<p class="enunciado">Menor Nota:</p>
+					<p class="valor">2.3</p>
+				</div>
+				<div class="section-body-dashboard histograma-notas-section">
+					<p class="enunciado">Histograma das Notas:</p>
+					<p class="valor"><canvas width="600px" height="" id="histogramaChart"></canvas></p>
+				</div>
+			</div>
 		</section>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 	<script type="text/javascript" src="script/script.js"> </script>
 </body>
 
