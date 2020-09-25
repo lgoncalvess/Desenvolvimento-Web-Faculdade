@@ -3,6 +3,7 @@
 *{
 	margin: 0;
 	padding: 0;
+	font-family: 'Roboto', sans-serif !important;
 }
 
 body {
@@ -21,7 +22,6 @@ ul {
 	background: #21612D;
 	border-bottom: 1px solid #4CE067;
 	color: #fff;
-	font-family: Helvetica;
 	padding: 10px 20px;
 }
 
