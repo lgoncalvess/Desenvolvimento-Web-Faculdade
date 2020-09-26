@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <link href="style/login.css" rel="stylesheet" />
+    <title>Autenticação do Usuário</title>
+</head>
+
+<body>
+    <div class="container-pai">
+        <h1> Seção de Login</h1>
+        <div class="container">
+            <form id="my-form" onsubmit="handleSubmit()">
+                <div class="input login-section">
+                    <label for="login">Login</label>
+                    <input type="text" id="login" name="login" required="true">
+                </div>
+                <div class="input password-section">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" required="true">
+                </div>
+                <button type="submit" form="my-form" class="form-btn">Logar</button>
+            </form>
+        </div>
+    </div>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</body>
+
+</html>
